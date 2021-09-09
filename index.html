@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+
+	<head> 
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> 3D scene </title> 
+		<link rel="stylesheet" href="style.css">
+
+		
+		<script type="module" src="index.js" defer></script> 
+
+		<style>
+			ol li{
+				font-weight: 600;
+				letter-spacing: 1px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div style="position:relative;" id="Tag3DScene">
+			<div style="position:absolute; top:20%; margin-left: 2em; text-align: center;">
+				<input type="range" min="0" max="100" value="50" step="5" id="slider" orient="vertical" style="transform: rotate(270deg); margin-bottom: 2.3em;" >
+				<h1 style="color: white; font-size: 1.5em; margin-top: 1em;">Lighting</h1>
+			</div>
+		 </div>
+
+		 <div style="position: absolute; top: 20px; right: 15px; background-color:bisque; max-width: 17em; padding: 0.5em; border-radius: 4px;">
+			 <h1 style="text-align: center; font-size: 1.5em;">Light Controls</h1>
+				<ol style="text-decoration: none;">
+					<li>Press T to toggle Top light</li>
+					<li>Press L to toggle Left light</li>
+					<li>Press R to toggle Right light</li>
+					<li>Press F to toggle flat shading</li>
+					<li>Press S to toggle Smooth shading</li>
+					<li>Press Y to toggle Bulb movement</li>
+					<li>Press Z to toggle Headlamp movement using your mouse to control</li>
+				</ol>
+		 </div>
+
+	</body>
+    
+</html>
